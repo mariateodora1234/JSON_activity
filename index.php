@@ -2,7 +2,7 @@
     header('Access-Control-Allow-Origin: *');
     $fruits = array(
         array(
-            "name" => "apple",
+            "name" => "APPLE",
             "scientificname" => "Malus domestica",
             "characteristics" => "fruitiness, acidity, sweetness, juiciness, crispness, hardness, toughness, mealiness, vegetativeness, and astringency",
             "originated" => "central Asia east of the Caspian Sea",
@@ -12,7 +12,7 @@
         ),
     
         array(
-            "name" => "pear",
+            "name" => "PEAR",
             "scientificname" => "Pyrus",
             "characteristics" => "sweet, juicy fruit that is narrow near its stalk, and wider and rounded at the bottom.",
             "originated" => "China and Asia Minor until the Middle East.",
@@ -21,7 +21,7 @@
             "image" => "https://static.libertyprim.com/files/familles/poire-large.jpg?1569271830"
         ),
         array(
-            "name" => "cherries",
+            "name" => "CHERRIES",
             "scientificname" => "Prunus avium",
             "characteristics" => "The fruit is a fleshy drupe (stone fruit) that is generally heart-shaped to nearly globular.",
             "originated" => "Asia Minor in the fertile areas between the Black and Caspian seas and were likely brought to Europe by birds.",
@@ -30,7 +30,7 @@
             "image" => "https://cdn.britannica.com/60/174560-050-5A33606F/cherries-Cluster.jpg"
         ),
         array(
-            "name" => "almond",
+            "name" => "ALMOND",
             "scientificname" => "Prunus amygdalus",
             "characteristics" => "almond is a stone fruit (drupe) and consists of three layers.",
             "originated" => "Western and Central Asia",
@@ -39,7 +39,7 @@
             "image" => "https://www.herbazest.com/imgs/7/d/8/57664/almond.jpg"
         ),
         array(
-            "name" => "watermelon",
+            "name" => "WATERMELON",
             "scientificname" => "Benincasa hispida",
             "characteristics" => "Winter melons are large fruits, averaging 15 to 80 centimeters in length, and have a bulbous, round to oblong shape with blunt, curved ends.",
             "originated" => "parts of Southern Asia",
