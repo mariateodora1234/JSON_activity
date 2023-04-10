@@ -16,34 +16,24 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-    
-
+    <div class="container">
         <div class="cards" id="cards">
-    <script>
-               
+            <h5 class="section-title h1 text-success text-center my-5 " >FRUITS</h5>
+            <script>
                 const xmlhttp = new XMLHttpRequest();
                 xmlhttp.open("GET", "http://localhost/JSON_activity/index.php");
                 xmlhttp.send();
                 xmlhttp.onload = function() {
                     const fruits = JSON.parse(this.responseText).fruits;
                     const items = document.getElementById('cards');
-                    var j=0;
-                    if(fruits){
-                              for(const i in fruits){
-                                j += 1;
-                                const row =`
-                                
-                                            <section id="team" class="pb-5">
-                                                <div class="container">
-                                                    <h5 class="section-title h1">FRUITS</h5>
-                                                    <div class="row">
-                                                        <!-- fruits Details -->
-                                                        <div class="col-xs-12 col-sm-6 col-md-4">
+                              for(const i in fruits){       
+                                const row =`     
+                                                        <!-- fruits Details -->   
                                                             <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                                                                 <div class="mainflip">
                                                                     <div class="frontside">
                                                                         <div class="card">
-                                                                            <div class="card-body text-center">
+                                                                            <div class="card-body">
                                                                                 <img src="${fruits[i].image}" alt="">
                                                                                 <h4 class="card-title">${fruits[i].name}</h4>
                                                                                 <p class="card-text"><b>Scientificname: </b>${fruits[i].scientificname}</p>
@@ -55,7 +45,7 @@
                                                                     </div>
                                                                     <div class="backside">
                                                                         <div class="card">
-                                                                            <div class="card-body text-center mt-4">
+                                                                            <div class="card-body mt-4">
                                                                                 <h4 class="card-title">BENEFITS:</h4>
                                                                                 <p class="card-text"><b>Benefits 1: </b>${fruits[i].benefits.benefits_1}</p>
                                                                                 <p class="card-text"><b>Benefits 2: </b>${fruits[i].benefits.benefits_2}</p>
@@ -65,16 +55,13 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                </section>
+                                                            </div>    
                                                 `;
                                 items.innerHTML += row;
-                                            }
-                                        }
-                                    }
-    </script>
+                                                    }
+                                            }              
+            </script>
+        </div> 
+    </div>
 </body>
 </html>
