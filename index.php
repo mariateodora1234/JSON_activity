@@ -7,7 +7,7 @@
             "characteristics" => "fruitiness, acidity, sweetness, juiciness, crispness, hardness, toughness, mealiness, vegetativeness, and astringency",
             "originated" => "central Asia east of the Caspian Sea",
             "harvestseason" => "September",
-            "benefits" => array("benefits_1" => "Could be good for your heart.", "benefits_2" => "They're rich in fiber and antioxidants", "benefits_3" => "lower risk of many chronic conditions, including diabetes, heart disease, and cancer.", "benefits_4" => "Could help fight asthma"),
+            "benefits" => array("benefits_1" => "Could be good for your heart.", "benefits_2" => "They're rich in fiber and antioxidants", "benefits_3" => "lower risk of heart disease, and cancer.", "benefits_4" => "Could help fight asthma"),
             "image" => "https://media.istockphoto.com/id/184276818/photo/red-apple.jpg?s=170667a&w=0&k=20&c=QDuN_TDSFCW2m-np7xPWPslXyrhwtIYP9Wq6W3NysPc="
         ),
     
