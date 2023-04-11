@@ -10,15 +10,14 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!------ Include the above in your HEAD tag ---------->
-
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container" >
         <div class="cards" id="cards">
-            <h5 class="section-title h1 text-success text-center my-5 " >FRUITS</h5>
+            <h5 class="section-title h1 text-success text-center my-5 " >TYPES OF FRUITS</h5>
             <script>
                 const xmlhttp = new XMLHttpRequest();
                 xmlhttp.open("GET", "http://localhost/JSON_activity/index.php");
@@ -28,34 +27,34 @@
                     const items = document.getElementById('cards');
                               for(const i in fruits){       
                                 const row =`     
-                                                        <!-- fruits Details -->   
-                                                            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                                                                <div class="mainflip">
-                                                                    <div class="frontside">
-                                                                        <div class="card">
-                                                                            <div class="card-body">
-                                                                                <img src="${fruits[i].image}" alt="">
-                                                                                <h4 class="card-title">${fruits[i].name}</h4>
-                                                                                <p class="card-text"><b>Scientificname: </b>${fruits[i].scientificname}</p>
-                                                                                <p class="card-text"><b>Characteristics: </b>${fruits[i].characteristics}</p>
-                                                                                <p class="card-text"><b>Originated: </b>${fruits[i].originated}</p>
-                                                                                <p class="card-text"><b>HarvestSeason: </b>${fruits[i].harvestseason}</p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="backside">
-                                                                        <div class="card">
-                                                                            <div class="card-body mt-4">
-                                                                                <h4 class="card-title">BENEFITS:</h4>
-                                                                                <p class="card-text"><b>Benefits 1: </b>${fruits[i].benefits.benefits_1}</p>
-                                                                                <p class="card-text"><b>Benefits 2: </b>${fruits[i].benefits.benefits_2}</p>
-                                                                                <p class="card-text"><b>Benefits 3: </b> ${fruits[i].benefits.benefits_3}</p>
-                                                                                <p class="card-text"><b>Benefits 4: </b>${fruits[i].benefits.benefits_4}</p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
+                                            <!-- fruits Details -->   
+                                                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                                                    <div class="mainflip">
+                                                        <div class="frontside">
+                                                            <div class="card">
+                                                                <div class="card-body">
+                                                                    <img src="${fruits[i].image}" alt="">
+                                                                    <h4 class="card-title">${fruits[i].name}</h4>
+                                                                    <p class="card-text"><b>Scientificname: </b>${fruits[i].scientificname}</p>
+                                                                    <p class="card-text"><b>Characteristics: </b>${fruits[i].characteristics}</p>
+                                                                    <p class="card-text"><b>Originated: </b>${fruits[i].originated}</p>
+                                                                    <p class="card-text"><b>HarvestSeason: </b>${fruits[i].harvestseason}</p>
                                                                 </div>
-                                                            </div>    
+                                                            </div>
+                                                        </div>
+                                                        <div class="backside">
+                                                            <div class="card">
+                                                                <div class="card-body mt-4">
+                                                                    <h4 class="card-title">BENEFITS:</h4>
+                                                                    <p class="card-text"><b>Benefits 1: </b>${fruits[i].benefits.benefits_1}</p>
+                                                                    <p class="card-text"><b>Benefits 2: </b>${fruits[i].benefits.benefits_2}</p>
+                                                                    <p class="card-text"><b>Benefits 3: </b> ${fruits[i].benefits.benefits_3}</p>
+                                                                    <p class="card-text"><b>Benefits 4: </b>${fruits[i].benefits.benefits_4}</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>   
                                                 `;
                                 items.innerHTML += row;
                                                     }
